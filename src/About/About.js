@@ -13,7 +13,7 @@ let history=useHistory();
     return (
         <div className="cont">
             <div className="myphoto">
-                <img data-aos="fade-up" className="noHover mypic" src="images/mypic.jpg"></img>
+                <img data-aos="fade-up" alt="aboutphoto" className="noHover mypic" src="images/mypic.jpg"></img>
             </div>
             <div className="about" data-aos="fade-right">
                 <label>Priyanka Ghansela</label>

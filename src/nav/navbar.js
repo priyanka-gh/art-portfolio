@@ -3,9 +3,7 @@ import './navbar.css'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import { BrowserRouter as Router,Link} from 'react-router-dom'
-import Home from '../Home/Home';
-import {Navbar,Nav,NavDropdown} from'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 const navbar = () => {       
     return (

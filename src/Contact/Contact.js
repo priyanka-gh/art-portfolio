@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <div  className="contactdiv" >
             <div className="contactimg rightdiv ">
-                    <img data-aos="fade-up" src="/images/ph1.jpg" className="noHover"></img>
+                    <img data-aos="fade-up" alt="contactimg" src="/images/ph1.jpg" className="noHover"></img>
             </div>
             
             <div className="leftdiv"  data-aos="fade-right">

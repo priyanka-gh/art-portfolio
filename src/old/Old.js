@@ -1,5 +1,4 @@
 import React from 'react'
-import App from '../App'
 import './Old.css'
 import {useState,useEffect} from 'react';
 import {SRLWrapper} from 'simple-react-lightbox'
