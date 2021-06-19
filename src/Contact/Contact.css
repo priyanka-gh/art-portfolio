@@ -1,0 +1,50 @@
+.contactdiv{
+    margin-left: 25vw;
+}
+
+.contactme{
+    padding-bottom: 4rem;
+}
+.contactimg{
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+    height: 94%;
+    top: 42px;
+}
+
+.leftdiv{
+    padding-right: 7rem;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    padding: 0.5rem 0;
+}
+input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.sub_but{
+    background-color: black;
+    color: blanchedalmond;
+    margin-left: 0;
+    width: 100%;
+}
+.sub_but:hover{
+    background-color: rgb(82, 78, 78);
+}

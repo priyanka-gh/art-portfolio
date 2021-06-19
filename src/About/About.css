@@ -1,0 +1,49 @@
+.cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.myphoto{
+    margin-left: 22vw;
+    align-items: center;
+
+}
+
+.mypic{
+    display: flex;
+    max-height: 80%;
+    max-width: 80% ;
+    margin-top: 5rem;
+}
+.noHover{
+    pointer-events: none;
+}
+
+.about{
+    position: relative;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem;
+}
+
+label{
+    font-size: 30px;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+}
+
+.lorem{
+    font-size: 16px;
+    padding-top: 2rem;
+}
+
+.subbut{
+    width: 10rem;
+    height: 4.5rem;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.subbut:hover{
+    background-color: rgb(56, 54, 54);
+}
