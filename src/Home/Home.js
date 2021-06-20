@@ -64,10 +64,10 @@ const Home = () => {
                 <div className="image-card"  key={image.id}>
                     <Fade left>
                     <a href={`/images/${image.name}`}>
-                        <img className="hoverimg" src={`/images/${image.name}`} alt=""></img>
-                    <div className="middle fadeIn-top">
-                        <AddIcon className="svg_icon"/>
-                    </div>
+                        <img src={`/images/${image.name}`} alt=""></img>
+                        <div className="middle fadeIn-top">
+                            <AddIcon className="svg_icon"/>
+                        </div>
                     </a>
                     </Fade>
                 </div>

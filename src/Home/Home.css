@@ -69,7 +69,16 @@ img:hover {
   .submit {
     display: none;
   }
-  .image-card {
-    margin-top: 6rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filters {
+    margin-left: 0;
+  }
+  .container {
+    margin-top: 15rem;
   }
 }
