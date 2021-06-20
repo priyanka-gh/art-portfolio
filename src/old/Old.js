@@ -3,8 +3,8 @@ import './Old.css'
 import {useState,useEffect} from 'react';
 import {SRLWrapper} from 'simple-react-lightbox'
 import AddIcon from '@material-ui/icons/Add';
-import Aos from "aos"
-import 'aos/dist/aos.css'
+import Fade from 'react-reveal/Fade';
+
 
 const images=[
     {id:'1' , name:'acrylic.jpg' , tag:'Painting'},
@@ -28,10 +28,6 @@ const options={
 
 const Old = () => {
 
-        
-    useEffect(()=>{
-        Aos.init({duration: 2000})
-    },[])
 
     const [tag,setTag]=useState('all')
     const [filtered,setFiltered]=useState([])
@@ -49,13 +45,15 @@ const Old = () => {
             <SRLWrapper options={options}>
             <div className="container">
             {filtered.map(image=>
-                <div className="image-card" data-aos="flip-left" key={image.id}>
+                <div className="image-card"  key={image.id}>
+                    <Fade left>
                     <a href={`/images/${image.name}`}>
                     <img className="image" src={`/images/${image.name}`} alt=""></img>
                     <div className="middle fadeIn-top">
                         <AddIcon className="svg_icon"/>
                     </div>
                     </a>
+                    </Fade>
                 </div>
             )}
             </div>

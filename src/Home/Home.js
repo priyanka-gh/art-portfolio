@@ -2,9 +2,11 @@ import React from 'react'
 import {useState,useEffect} from 'react';
 import {SRLWrapper} from 'simple-react-lightbox'
 import AddIcon from '@material-ui/icons/Add';
+import Fade from 'react-reveal/Fade';
+
 import './Home.css'
-import Aos from "aos"
-import 'aos/dist/aos.css'
+// import Aos from "aos"
+// import 'aos/dist/aos.css'
 const images=[
     {id:'id1' , name:'fourteen.jpg' , tag:'Mandala'},
     {id:'id2' , name:'vedtara.jpg' , tag:'Digital'},
@@ -43,11 +45,6 @@ const options={
 
 const Home = () => {
 
-    
-    useEffect(()=>{
-        Aos.init({duration: 9000})
-    },[])
-
     const [tag,setTag]=useState('all')
     const [filtered,setFiltered]=useState([])
 
@@ -66,13 +63,15 @@ const Home = () => {
             <SRLWrapper options={options}>
             <div className="container">
             {filtered.map(image=>
-                <div className="image-card" data-aos="fade-up" key={image.id}>
+                <div className="image-card"  key={image.id}>
+                    <Fade left>
                     <a href={`/images/${image.name}`}>
-                        <img className="image "  src={`/images/${image.name}`} alt=""></img>
+                        <img className="hoverimg" src={`/images/${image.name}`} alt=""></img>
                     <div className="middle fadeIn-top">
                         <AddIcon className="svg_icon"/>
                     </div>
                     </a>
+                    </Fade>
                 </div>
             )}
             </div>

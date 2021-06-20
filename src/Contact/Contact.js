@@ -1,19 +1,19 @@
-import {useEffect} from 'react'
 import './Contact.css'
-import Aos from "aos"
-import 'aos/dist/aos.css'
+import Fade from 'react-reveal/Fade';
+
 const Contact = () => {
-    useEffect(()=>{
-        Aos.init({duration: 2000})
-    },[])
+
 
     return (
         <div  className="contactdiv" >
             <div className="contactimg rightdiv ">
-                    <img data-aos="fade-up" alt="contactimg" src="/images/ph1.jpg" className="noHover"></img>
+            <Fade bottom>
+                <img data-aos="fade-up" alt="contactimg" src="/images/ph1.jpg" className="noHover"></img>
+            </Fade>
             </div>
             
-            <div className="leftdiv"  data-aos="fade-right">
+            <div className="leftdiv" >
+            <Fade right>
                 <h1 className="contactme">Contact me</h1>
                 <p>Feel free to contact me via any of the below or fill out the form at the bottom of the page.</p>
                 <p>Email: priyanka.ghanselaa@gmail.com</p>
@@ -25,6 +25,7 @@ const Contact = () => {
                     <input type="email"></input>
                     <button className="sub_but">SUBMIT</button>
                 </div>
+            </Fade>
             </div>
         </div>
     )
