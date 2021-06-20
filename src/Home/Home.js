@@ -3,10 +3,8 @@ import {useState,useEffect} from 'react';
 import {SRLWrapper} from 'simple-react-lightbox'
 import AddIcon from '@material-ui/icons/Add';
 import Fade from 'react-reveal/Fade';
-
 import './Home.css'
-// import Aos from "aos"
-// import 'aos/dist/aos.css'
+
 const images=[
     {id:'id1' , name:'fourteen.jpg' , tag:'Mandala'},
     {id:'id2' , name:'vedtara.jpg' , tag:'Digital'},

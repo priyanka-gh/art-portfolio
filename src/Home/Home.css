@@ -65,7 +65,7 @@ img:hover {
   top: 80%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   .submit {
     display: none;
   }
