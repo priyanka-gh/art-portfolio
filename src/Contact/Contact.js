@@ -8,7 +8,9 @@ const Contact = () => {
         <div  className="contactdiv" >
             <div className="contactimg rightdiv ">
             <Fade bottom>
-                <img data-aos="fade-up" alt="contactimg" src="/images/ph1.jpg" className="noHover"></img>
+                <div className="imgcontact">
+                <img alt="contactimg" src="/images/ph1.jpg" className="noHover"></img>
+                </div>
             </Fade>
             </div>
             
@@ -23,6 +25,8 @@ const Contact = () => {
                     <input type="text"></input>
                     <h5>Email</h5>
                     <input type="email"></input>
+                    <h5>Message</h5>
+                    <textarea></textarea>
                     <button className="sub_but">SUBMIT</button>
                 </div>
             </Fade>
