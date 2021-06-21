@@ -20,7 +20,7 @@ const navbar = () => {
                     <Link to="/contact" className="hover-1">Contact</Link> 
                 </div> */}
                 <div className="vertical-menu">
-                <Navbar className="Navbar" expand="md" className="">
+                <Navbar className="Navbar" expand="md">
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav defaultActiveKey="/home" className="flex-column">
