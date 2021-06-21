@@ -1,4 +1,4 @@
-.left {
+.navleft {
   display: flex;
   flex-direction: column;
   background-color: #f6f2ee;
@@ -29,7 +29,7 @@
   flex-direction: column;
   line-height: normal;
   font-size: 16px;
-  margin: 3rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .vertical-menu a {
@@ -82,8 +82,40 @@ a > span:after {
   display: none;
 }
 
+.navbar > .navbar-toggler {
+  outline: none;
+  color: transparent;
+  border-color: transparent;
+}
+
 @media screen and (max-width: 700px) {
-  .left {
+  .upper {
     display: none;
+  }
+  .navleft {
+    background-color: transparent;
+    position: relative;
+    height: auto;
+  }
+  .icons {
+    display: none;
+  }
+
+  .vertical-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+    height: max-content;
+    width: max-content;
+  }
+  .navbar {
+    z-index: 1;
+    float: right;
+  }
+
+  .navbar > .navbar-toggler {
+    outline: none;
+    color: transparent;
+    border-color: transparent;
   }
 }

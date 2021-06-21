@@ -59,11 +59,11 @@ const Home = () => {
             <TagButton className="tags" name="Digital" handleSetTag={setTag} tagActive={tag==='Digital'?true:false}/>
             <TagButton className="tags" name="all" handleSetTag={setTag} tagActive={tag==='all'?true:false}/>
             <SRLWrapper options={options}>
-            <div className="container">
+            <div className="containerHome">
             {filtered.map(image=>
                 <div className="image-card"  key={image.id}>
                     <Fade left>
-                    <a href={`/images/${image.name}`}>
+                    <a className="homeImage" href={`/images/${image.name}`}>
                         <img src={`/images/${image.name}`} alt=""></img>
                         <div className="middle fadeIn-top">
                             <AddIcon className="svg_icon"/>

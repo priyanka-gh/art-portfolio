@@ -14,7 +14,7 @@ button {
   font-size: 16px;
 }
 
-.container {
+.containerHome {
   margin-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -34,7 +34,7 @@ img:hover {
 }
 
 .filters {
-  margin-left: 21vw;
+  margin-left: 24vw;
   margin-bottom: 2rem;
 }
 
@@ -61,7 +61,7 @@ img:hover {
   opacity: 1;
 }
 
-.container .image-card .fadeIn-bottom {
+.containerHome .image-card .fadeIn-bottom {
   top: 80%;
 }
 
@@ -77,8 +77,6 @@ img:hover {
   }
   .filters {
     margin-left: 0;
-  }
-  .container {
-    margin-top: 15rem;
+    margin-top: 0rem;
   }
 }
