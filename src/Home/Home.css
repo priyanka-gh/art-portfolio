@@ -7,7 +7,7 @@ button {
   background-color: rgb(255, 236, 236);
   border: none;
   border-radius: 1rem;
-  width: 15%;
+  width: max-content;
   margin: 2rem 1rem;
   padding: 0.5rem;
   text-decoration: none;
@@ -27,7 +27,6 @@ img {
   max-height: 90%;
   max-width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 0.5rem;
 }
 img:hover {
   opacity: 0.5;
@@ -37,7 +36,9 @@ img:hover {
   margin-left: 24vw;
   margin-bottom: 2rem;
 }
-
+.homeImage {
+  padding: 0.5rem;
+}
 .middle {
   position: absolute;
   text-align: center;
@@ -67,6 +68,17 @@ img:hover {
 
 @media screen and (max-width: 700px) {
   .submit {
+    width: max-content;
+    margin-top: 0;
+  }
+
+  .filterBtn {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .filterBtn::-webkit-scrollbar {
     display: none;
   }
 
@@ -77,6 +89,6 @@ img:hover {
   }
   .filters {
     margin-left: 0;
-    margin-top: 0rem;
+    margin-top: 0.5rem;
   }
 }

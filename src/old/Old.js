@@ -39,16 +39,18 @@ const Old = () => {
     },[tag])
     return (
         <div className="filters" handleSetTag={setTag}>
+            <div className="filterBtn">
             <TagButton name="Painting" handleSetTag={setTag} tagActive={tag==='Painting'?true:false}/>
             <TagButton name="Still Life" handleSetTag={setTag} tagActive={tag==='Still Life'?true:false}/>
             <TagButton name="all" handleSetTag={setTag} tagActive={tag==='all'?true:false}/>
+            </div>
             <SRLWrapper options={options}>
-            <div className="container">
+            <div className="containerHome">
             {filtered.map(image=>
                 <div className="image-card"  key={image.id}>
                     <Fade left>
                     <a href={`/images/${image.name}`}>
-                    <img className="image" src={`/images/${image.name}`} alt=""></img>
+                    <img className="homeImage" src={`/images/${image.name}`} alt=""></img>
                     <div className="middle fadeIn-top">
                         <AddIcon className="svg_icon"/>
                     </div>

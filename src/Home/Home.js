@@ -53,21 +53,24 @@ const Home = () => {
     },[tag])
     return (
         <div className="filters" handleSetTag={setTag}>
-            <TagButton className="tags" name="Mandala" handleSetTag={setTag} tagActive={tag==='Mandala'?true:false}/>
-            <TagButton className="tags" name="Oil Pastel" handleSetTag={setTag} tagActive={tag==='Oil Pastel'?true:false}/>
-            <TagButton className="tags" name="Sketching" handleSetTag={setTag} tagActive={tag==='Sketching'?true:false}/>
-            <TagButton className="tags" name="Digital" handleSetTag={setTag} tagActive={tag==='Digital'?true:false}/>
-            <TagButton className="tags" name="all" handleSetTag={setTag} tagActive={tag==='all'?true:false}/>
+            <div className="filterBtn">
+                <TagButton className="tags" name="Mandala" handleSetTag={setTag} tagActive={tag==='Mandala'?true:false}/>
+                <TagButton className="tags" name="Oil Pastel" handleSetTag={setTag} tagActive={tag==='Oil Pastel'?true:false}/>
+                <TagButton className="tags" name="Sketching" handleSetTag={setTag} tagActive={tag==='Sketching'?true:false}/>
+                <TagButton className="tags" name="Digital" handleSetTag={setTag} tagActive={tag==='Digital'?true:false}/>
+                <TagButton className="tags" name="all" handleSetTag={setTag} tagActive={tag==='all'?true:false}/>
+            </div>
             <SRLWrapper options={options}>
             <div className="containerHome">
             {filtered.map(image=>
                 <div className="image-card"  key={image.id}>
                     <Fade left>
-                    <a className="homeImage" href={`/images/${image.name}`}>
-                        <img src={`/images/${image.name}`} alt=""></img>
+                    <a  href={`/images/${image.name}`}>
+                        <img className="homeImage" src={`/images/${image.name}`} alt=""></img>
                         <div className="middle fadeIn-top">
                             <AddIcon className="svg_icon"/>
                         </div>
+
                     </a>
                     </Fade>
                 </div>
@@ -79,12 +82,14 @@ const Home = () => {
 }
 
 const TagButton=({name,handleSetTag,tagActive})=>{
-    return <button className="submit" onClick={
-        ()=>{
-            handleSetTag(name)
-            } }>
-        {name.toUpperCase()}
-    </button>
+    return( 
+        <button className="submit" onClick={
+            ()=>{
+                handleSetTag(name)
+                } }>
+            {name.toUpperCase()}
+        </button>
+)
 }
 
 export default Home
